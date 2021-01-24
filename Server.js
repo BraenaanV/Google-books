@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === "production") {
 //connect to Mongo
 
 mongoose.connect(
-    process.env.MONGODB_URI || "mongo://localhost/books",
+    process.env.MONGODB_URI || "mongodb://localhost/books",
     {
       useCreateIndex: true,
       useNewUrlParser: true
